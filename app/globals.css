@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes move-left {
+    0% {
+      transform: translateX(-190px);
+    }
+    100% {
+      transform: translateX(-0px);
+    }
+  }
+  
+  .animate-move-left {
+    animation: move-left 1000s linear forwards;
+  }
+  
+
+
+  @keyframes rotateMascot {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-rotate {
+    animation: rotateMascot 3000s linear infinite;
+  }
+  
+  
+  
+ 
+@keyframes slide-in-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-slide-in-left {
+    animation: slide-in-left 1s ease-out both;
+  }
+  
+
+
+@keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+  .shimmer-effect {
+    background: linear-gradient(90deg, #ffd700, #ffcc00, #ffd700);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    color: white;
+
+  }
+
+  .shimmer-effect-orange {
+    background: linear-gradient(90deg, #ff7f50, #ff6347, #ff7f50);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    color: white;
+  }
+
+  @keyframes bounce-multi {
+    0% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+    80% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-2px);
+    }
+  }
+  
+  .animate-bounce-multi {
+    animation: bounce-multi 1.2s ease-in-out 3;
+  }
+  
+  
+  /* Keyframe animation for shimmer */
+  @keyframes shimmer-orange {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+
+@layer utilities {
+  @keyframes sparkle {
+    0%, 100% {
+      background-position: 200% center;
+    }
+    50% {
+      background-position: 0% center;
+    }
+  }
+
+  .animate-sparkle {
+    animation: sparkle 2s linear infinite;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
