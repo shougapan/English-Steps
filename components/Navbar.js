@@ -12,9 +12,9 @@ export default function Navbar() {
       <div className="flex justify-between items-center">
         {/* Logo & Title */}
         <div className="flex items-center animate-slide-in-left">
-          <p className="text-white text-2xl sm:text-4xl font-semibold py-2 shadow-xl">
-            English Step<span className="text-orange-500">s</span>
-          </p>
+<p className="border-b-2 border-white text-white text-2xl sm:text-4xl font-semibold py-2 shadow-xl">
+  English Step<span className="text-orange-500">s</span>
+</p>
           <div className="ml-2">
             <Image
               src="/mascot2.png"
